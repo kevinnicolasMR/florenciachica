@@ -4,6 +4,10 @@
     src: url(/public/fonts/Montserrat/static/Montserrat-Medium.ttf);
 }
 @font-face {
+    font-family: 'fontThin';
+    src: url(/public/fonts/Montserrat/static/Montserrat-Thin.ttf);
+}
+@font-face {
     font-family: 'bodyFont';
     src: url(/public/fonts/Montserrat/static/Montserrat-Regular.ttf);
 }
@@ -15,6 +19,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'bodyFont';
+    background-color: rgb(216, 216, 216);
   }
 
 
@@ -68,8 +73,8 @@ height: 100%;
 }
 
 .acctionHeader{
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 32px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -133,7 +138,7 @@ height: 100%;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     transition: bottom 0.5s;
     bottom: -100%;
   }
@@ -147,16 +152,79 @@ height: 100%;
     bottom: -100%;
 }
 
+
+/* Dentro del over */
+
 .fixedMenuHeaderOverOn{
     bottom: 0%;
 }
 
-
-
 .menuHeaderOver{
     color: #ffffff;
+    position: relative;
+    cursor: pointer;
 }
 
+
+
+.buttonOfOver{
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+    top: 0;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 1s all;
+    font-size: 20px;
+}
+
+
+.menuOver{
+    margin: 5%;
+}
+
+.all-button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin: 4px;
+}
+
+.all-button:hover{
+    color: black;
+    background-color: rgb(89, 89, 89);
+}
+
+
+.category-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 8px 12px;
+    margin: 4px;
+    cursor: pointer;
+    font-size: 40px;
+    transition: all 0.3s;
+  }
+
+  .category-button:hover{
+    background-color: black;
+    color: white;
+  }
+  
 /* Logo */
 
 .logoHeaderContainer{
@@ -175,7 +243,7 @@ width: 33%;
 .logoStyle{
     display: inline;
     color: white;
-    font-family: 'font400', sans-serif;
+    font-family: 'fontThin', sans-serif;
     cursor: pointer;
 }
 
@@ -204,12 +272,10 @@ height: 100%;
 
 
 
-
-
-
-
-
 /* Header Styles */
+
+
+
 
 
 /* proyect Seccion styles */
@@ -277,7 +343,11 @@ height: 100%;
         width: 100%;
     }
     .acctionHeader{
-        width: 70%;
+        width: 28%;
+        margin-left: 10px;
+    }
+    .menuHeader{
+        width: 50%;
     }
 }
 
@@ -293,8 +363,10 @@ height: 100%;
         width: 100%;
     }
     .acctionHeader{
-        border: 1px solid white;
-        width: 100%;
+        width: 50%;
         margin-left: 10px;
+    }
+    .menuHeader{
+        width: 50%;
     }
 }
