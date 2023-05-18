@@ -68,19 +68,60 @@ height: 100%;
 }
 
 .acctionHeader{
-    width: 40%;
-    height: 60%;
+    width: 50px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    position: relative;
 }
+
+.acctionHeader > span{
+    transition: all .5s;
+    transform-origin: left;
+}
+
+.acctionHeader > span {
+    transform: all 1s ;
+}
+
 .spanHeaderButton{
     width: 100%;
     height: 2px;
-    background-color: white;
-    margin-bottom: 10px;
 }
 
+.span1{
+    background-color: aliceblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.span2{
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+
+
+.span3{
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.acctionHeader:hover > .span1:first-child {
+    transform: rotate(45deg);
+}
+.acctionHeader:hover > .span2:nth-child(2){
+    opacity: 0;
+}
+.acctionHeader:hover > .span3:last-child{
+    transform: rotate(-45deg);
+}
 
 
 /* Over Menu Seccion */
