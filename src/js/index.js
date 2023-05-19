@@ -3,167 +3,64 @@ console.log("JS index conectado")
 // Datos de ejemplo para los proyectos
 const proyectos = [
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
+        nombre: 'Desarrollo kevin Medina',
+        categoria: 'Desarrollo web',
+        url: 'https://kevinnicolasmr.vercel.app/',
+        imagen: '../../public/image/img.png'
+    },
+    {
+        nombre: 'Plantilla Base',
+        categoria: 'Plantilla',
+        url: '/pages/plantilla.html',
+        imagen: '../../public/image/img.png'
+    },
+    {
+        nombre: 'Maldonado',
+        categoria: 'Arquitectura',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
+        nombre: 'Florencia',
+        categoria: 'Arquitectura',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
+        nombre: 'Pedro',
+        categoria: 'Trabajadores',
+        url: 'https://proyecto1.com',
+        imagen: '../../public/image/img.png'
+    },  {
+        nombre: 'Montevideo',
+        categoria: 'Arquitectura',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
+        nombre: 'Maldonado',
         categoria: 'Premios',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
+        nombre: 'Maldonado',
+        categoria: 'Arquitectura',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
+        nombre: 'Florencia',
+        categoria: 'Arquitectura',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
     },
     {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
+        nombre: 'Pedro',
+        categoria: 'Trabajadores',
         url: 'https://proyecto1.com',
         imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Proyectos',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Articulo',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
-    {
-        nombre: 'Proyecto 1111',
-        categoria: 'Premios',
-        url: 'https://proyecto1.com',
-        imagen: '../../public/image/img.png'
-    },
+    }
 ];
 
 
@@ -261,4 +158,32 @@ categorias.forEach(categoria => {
       filtrarProyectos(categoria);
     });
     menuOver.appendChild(categoriaButton);
+  });
+
+
+
+  /* Codigo del search */ 
+
+  const inputProyecto = document.getElementById('inputProyecto');
+  const opcionesProyecto = document.getElementById('opcionesProyecto');
+  
+  inputProyecto.addEventListener('input', () => {
+      const filtro = inputProyecto.value.toLowerCase();
+      const opcionesFiltradas = proyectos.filter(proyecto => proyecto.nombre.toLowerCase().includes(filtro));
+  
+      opcionesProyecto.innerHTML = '';
+  
+      opcionesFiltradas.forEach(opcion => {
+          const botonProyecto = document.createElement('button');
+          botonProyecto.textContent = opcion.nombre;
+          botonProyecto.classList.add('boton-proyecto');
+          botonProyecto.addEventListener('click', () => {
+              window.location.href = opcion.url;
+          });
+  
+          opcionesProyecto.appendChild(botonProyecto);
+
+          const saltoLinea = document.createElement('br');
+          opcionesProyecto.appendChild(saltoLinea);
+      });
   });

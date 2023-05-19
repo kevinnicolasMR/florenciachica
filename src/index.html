@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/index.css">
     <title>Florencia Chica | Arquitecta</title>
 </head>
-
 <body>
     <header class="headerFixed">
         <div class="header">
@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="searchHeaderContainer">
-                <div class="searchHeader">
+                <div class="searchHeader" >
                     <i class="fa-solid fa-magnifying-glass searchIcon" style="color: #ffffff;"></i>
                 </div>
             </div>
@@ -37,6 +37,16 @@
         <div class="menuHeaderOver">
             <button class="buttonOfOver">X</button>
             <div id="menuOver" class="menuOver"></div>
+        </div>
+    </section>
+    <section class="ficedSearchHeaderOver">
+        <div id="filtroProyectos" class="filtroProyectos">
+            <div class="searchContainer">
+                <input type="text" id="inputProyecto" placeholder="Escribe el nombre del proyecto" class="inputProyecto">
+            </div>
+            <div class="resultSearchContainer">
+                <div id="opcionesProyecto"></div>
+            </div>
         </div>
     </section>
     <section id="proyectos">
