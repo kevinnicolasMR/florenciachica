@@ -7,7 +7,7 @@
 
 
 .header{
-    height: 80px;
+    height: 70px;
     width: 100%;
     background-color: rgb(10, 10, 10);
     display: flex;
@@ -197,12 +197,13 @@ width: 33%;
     justify-content: center;
 }
 .logoStyle{
+    text-decoration: none;
     display: inline;
     color: white;
     font-family: 'fontThin', sans-serif;
     cursor: pointer;
+    font-size: 30px;
 }
-
 
 
 /* Search */

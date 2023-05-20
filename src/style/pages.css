@@ -19,7 +19,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'bodyFont';
-    background-color: rgb(159, 89, 89);
+    background-color: rgb(162, 162, 162);
   }
 
 
@@ -39,3 +39,237 @@ h5{
     font-size: 30px;
 }
 
+
+
+
+/* Header estilos */ 
+
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    z-index: 101;
+}
+
+.containerReturn{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.return{
+    width: 100px;
+    height: 80%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.returnIcon{
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+
+.containerLogo{
+    width: 34%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoStyle{
+    text-decoration: none;
+    display: inline;
+    color: white;
+    font-family: 'fontThin', sans-serif;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+
+
+
+.containerSeach{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.searchHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 100px;
+    height: 80%;
+    cursor: pointer;
+}
+.searchIcon{
+    font-size: 35px;
+}
+
+
+/* Copia de los estilos de header.css */ 
+
+.searchHeaderContainer{
+display: flex;
+justify-content: right;
+align-items: center;
+width: 33%;
+height: 100%;
+}
+.searchHeader{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchIcon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* desplegable del search */
+
+
+.ficedSearchHeaderOver{
+    z-index: 100;
+    position: fixed;
+    bottom: -98%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 30%;
+    height: 100%;
+    transition: bottom 0.5s;
+}
+
+@media (max-width: 1200px) {
+    .ficedSearchHeaderOver{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .ficedSearchHeaderOver{
+        width: 100%;
+    }
+}
+
+
+.show{
+    bottom: 0;
+}
+
+.filtroProyectos{
+    height: 100%;
+    width: 100%;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.inputProyecto{
+    color: white;
+    border: none;
+    width: 70%;
+    height: 50%;
+    padding-left: 5%;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(98, 98, 98);
+}
+
+
+.resultSearchContainer{
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.boton-proyecto{
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    border-left: 2px solid black;
+    transition: all 0.4s;
+}
+
+.boton-proyecto:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Seccion de los proyectos*/
+
+
+.infoProyectContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+
+
+
+
+
+.infoTextContainer{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer{
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+.infoImagenContainer{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageContainer{
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+}

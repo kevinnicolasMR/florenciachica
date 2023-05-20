@@ -1,6 +1,5 @@
 console.log("JS index conectado")
 
-// Datos de ejemplo para los proyectos
 const proyectos = [
     {
         nombre: 'Desarrollo kevin Medina',
@@ -62,6 +61,7 @@ const proyectos = [
         imagen: '../../public/image/img.png'
     }
 ];
+
 
 
 // Función para mostrar los proyectos en la sección correspondiente
