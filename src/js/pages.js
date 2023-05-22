@@ -96,3 +96,52 @@ inputProyecto.addEventListener('input', () => {
     opcionesProyecto.appendChild(saltoLinea);
   });
 });
+
+
+
+
+
+// Obtén referencias a los elementos del DOM
+const bigImgElement = document.querySelector('.imagenGrande');
+const imgSmallElements = document.getElementsByClassName('imgSmall');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const closeButton = document.getElementsByClassName('close')[0];
+
+
+
+
+// Agrega evento de clic a la imagen grande
+bigImgElement.addEventListener('click', function() {
+    // Actualiza la imagen del modal con la imagen grande
+    const imageUrl = this.src;
+    modalImage.src = imageUrl;
+  
+    // Muestra el modal
+    modal.style.display = 'block';
+  });
+
+
+// Agrega eventos de clic a las imágenes pequeñas
+for (let i = 0; i < imgSmallElements.length; i++) {
+  imgSmallElements[i].addEventListener('click', function() {
+    // Actualiza la imagen del modal con la imagen clicada
+    const imageUrl = this.src;
+    modalImage.src = imageUrl;
+
+    // Muestra el modal
+    modal.style.display = 'block';
+  });
+}
+
+// Cierra el modal al hacer clic en el botón de cerrar
+closeButton.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// Cierra el modal al hacer clic fuera de la imagen
+window.addEventListener('click', function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+});
